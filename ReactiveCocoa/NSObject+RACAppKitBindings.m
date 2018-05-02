@@ -94,7 +94,7 @@
 
 	@weakify(self);
 
-	void (^cleanUp)(void) = ^{
+	void (^cleanUp)() = ^{
 		@strongify(self);
 
 		id target = self.target;
